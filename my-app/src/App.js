@@ -1,27 +1,27 @@
-import {Route , Switch} from 'react-router-dom';
+import React from 'react';
+import {BrowserRouter,Routes,Route,Link} from 'react-router-dom';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import ErrorPage from './Pages/ErrorPage';
 
-import Page1 from './pages/Page1';
-import Page2 from './pages/Page2';
-import Page3 from './pages/Page3';
 
 function App() {
   
   return(
-    <div>
-      <Switch>
-        <Route path='/'>
-        <Page1 />
-        </Route>
-
-        <Route path='/page2'>
-        <Page2 />
-        </Route>
-
-        <Route path='/page3'>
-        <Page3 />
-        </Route>
-      </Switch>
-    </div>
+    <BrowserRouter>
+       <div className="page h-screen">
+            <nav className='bg-red-700 fac fjc'>
+              <Link to="/" className="btn btn-green">Home</Link>
+              <Link to="/about" className="btn btn-blue">About</Link>
+            </nav>
+          
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="*" element={<ErrorPage />} />
+            </Routes>
+       </div>  
+    </BrowserRouter>
   );
 }
 
