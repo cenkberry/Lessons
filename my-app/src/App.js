@@ -1,24 +1,27 @@
-function App() {
-   
+import {Route , Switch} from 'react-router-dom';
 
-    
-  return (
-       <div className="bg-gray-600 h-screen fac fjc flex-col">
-          
-          <div>Lorem, ipsum.</div>
-          <div>Similique, nulla.</div>
-          <div>Consequuntur, dolorem.</div>
-          <div>Pariatur, maxime!</div>
-          <div>Eum, voluptatibus.</div>
-          <div>Assumenda, vero?</div>
-          <div>Illo, sed?</div>
-          <div>Quidem, cumque?</div>
-          <div>Voluptatibus, voluptate?</div>
-          <div>Veniam, quo.</div>
-          <div>Placeat, aperiam.</div>
-          <div>Consequuntur, error.</div>
- 
-     </div>
+import Page1 from './pages/Page1';
+import Page2 from './pages/Page2';
+import Page3 from './pages/Page3';
+
+function App() {
+  
+  return(
+    <div>
+      <Switch>
+        <Route path='/'>
+        <Page1 />
+        </Route>
+
+        <Route path='/page2'>
+        <Page2 />
+        </Route>
+
+        <Route path='/page3'>
+        <Page3 />
+        </Route>
+      </Switch>
+    </div>
   );
 }
 
