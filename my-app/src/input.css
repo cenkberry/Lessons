@@ -1,13 +1,10 @@
 @tailwind base;
 @tailwind components;
-
 @layer components {
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
   }
-
   .fas {
     display: flex;
     align-items: start;
@@ -108,12 +105,14 @@
     background-color: #fd7e14;
     color: #ffffff;
   }
-  .page{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 11fr;
-  }
+  
 
 }
-
 @tailwind utilities;
+
+.header{
+  display: grid;
+  grid-template-columns: 4rem auto;
+  grid-template-rows: 3.5rem;
+  align-items:center;
+}
