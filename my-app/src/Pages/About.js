@@ -8,6 +8,7 @@ function About(){
         <div className="border-2 fac fjc">Architecto nesciunt doloremque temporibus tenetur!</div>
         <div className="border-2 fac fjc">Architecto nesciunt doloremque temporibus tenetur!</div>
      
+     
     </div>
   )
 }

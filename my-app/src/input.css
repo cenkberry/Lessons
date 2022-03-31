@@ -17,7 +17,8 @@
 
   .fae {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
+
   }
 
   .fjs {
@@ -32,7 +33,7 @@
 
   .fje {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   .gr1 {
@@ -104,9 +105,8 @@
   .btn-orange {
     background-color: #fd7e14;
     color: #ffffff;
-  }
-  
 
+  }
 }
 @tailwind utilities;
 
