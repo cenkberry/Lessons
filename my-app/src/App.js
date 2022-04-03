@@ -2,9 +2,11 @@ import React from 'react';
 
 export default function App(){
 
-
   return(
-    <h1>hello2</h1>
+    <div className="h-screen bg-gray-400 fac fjc">
+     
+      OKEY
+    
+    </div>
   )
-
 }
