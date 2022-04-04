@@ -7,33 +7,32 @@
   }
   .fas {
     display: flex;
-    align-items: start;
+    align-items: start !important;
   }
 
   .fac {
     display: flex;
-    align-items: center;
+    align-items: center !important;
   }
 
-  .fae {
+  .fae{
     display: flex;
-    align-items: flex-end;
-
+    align-items: end !important;
   }
 
   .fjs {
     display: flex;
-    justify-content: start;
+    justify-content: start !important;
   }
 
   .fjc {
     display: flex;
-    justify-content: center;
+    justify-content: center !important;
   }
 
   .fje {
     display: flex;
-    justify-content: flex-end;
+    justify-content: end !important;
   }
 
   .gr1 {
