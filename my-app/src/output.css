@@ -501,9 +501,23 @@ body {
   border-radius: 0.25rem;
 }
 
-.btn-green {
-  background-color: #00af3b;
+.btn-black {
+  background-color: #333a41;
   color: #ffffff;
+}
+
+.btn-yellow {
+  background-color: #ffc400;
+  color: #202529;
+}
+
+.btn-gray {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
 }
 
 .h-screen {
@@ -517,9 +531,4 @@ body {
 .bg-gray-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
