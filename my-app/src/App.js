@@ -1,25 +1,27 @@
 import React, { useEffect , useRef , useState } from 'react';
-import Joke from './Joke';
-import jokesData from './jokesData';
+import Livediv from './Livediv';
+import lives from './lives';
 
 export default function App(){
 
-   const jokeDiv = jokesData.map(joke => 
-    {
-     return <Joke 
-              key={joke.id}
-              setup={joke.setup}
-              punchline={joke.punchline}
-            />
-    });
+   const artists = lives.map(artist => {
+        
+      return(
+        <Livediv 
+        key={artist.id}
+        name={artist.name}
+        place={artist.place}
+        ticket={artist.ticket} 
+        />
+      )  
+   });
 
 
   return(
-    <div className="h-screen bg-gray-400 space-y-3">
+    <div className="h-screen p-5 bg-gray-400 grid grid-cols-[1fr_1fr]">
        
-    {jokeDiv}
+      {artists}
     
-     
     </div>
   )
 }
