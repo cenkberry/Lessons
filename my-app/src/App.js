@@ -1,42 +1,28 @@
-import React, { useEffect , useRef , useState , useReducer , Component } from 'react';
+import React from 'react';
+import { useEffect , useRef , useState , useReducer} from 'react';
 
-class App extends Component{
-    constructor(props) {
-      super(props);
-    }
-    
-    state = {
-          
-      isVis : false,
-      butStat: true
-    }
+export default function App(){
+   
+   const messages = ["LinkedIn : merhaba bla blaaaaaaaaaaaaaaaaaaa", "Facebook : merhaba bla bla", "Gmail : merhaba bla bla"];
 
 
-    showHide = (e)=>{
-        this.setState({
-          isVis : !this.state.isVis,
-          butStat: !this.state.butStat
-        })
-    }
-
-
-  render(){
-
-     const {isVis} = this.state;
-     const {butStat} = this.state;
-     
     return(
-      <div className="fac fjc">
-        <div className="grid grid-cols-[5fr_1fr] bg-blue-300 p-2">
-          <p className="bg-red-300 p-2">Temporibus?</p>
-          <button onClick={this.showHide}
-          className="btn btn-green">{butStat ? "Show" : "Hide"}</button>
-          {isVis && <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea?</p>}
-        </div>
+      <div className="h-screen bg-blue-300 fac fjc flex-col">
+         <div className="relative my-2">
+          <img className="w-16"src="http://cdn.onlinewebfonts.com/svg/img_519882.png" alt="" />
+          <div className="badge">{messages.length}</div>
+         </div>
+      
+       <div className="p-2 bg-gray-400">
+       {
+         messages.map( message =>{
+           return(
+             <div className="my-2 p-2 bg-red-500">{message}</div>
+           )
+         })
+       }
+       </div>
 
       </div>
     )
-  }
 }
-
-export default App;
