@@ -3,12 +3,13 @@ import { SiteContext } from '../Context';
 
 function Comp3() {
 
-  const {counter , MultiplyCounter} = React.useContext(SiteContext);
+  const {mynum , MultiNum} = React.useContext(SiteContext);
 
  return (
    <div className="bg-gray-300 fac fjc flex-col p-8">
-     <div>{counter}</div>
-     <button className="btn btn-yellow" onClick={MultiplyCounter}>Multi</button>
+     <div>{mynum}</div>
+     <button className="btn btn-yellow" 
+     onClick={MultiNum}>Multi</button>
    </div>
  )
 }

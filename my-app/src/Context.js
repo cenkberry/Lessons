@@ -2,28 +2,24 @@ import { useState, createContext } from "react";
 
 export const SiteContext = createContext();
 
+export default function Store(props){
 
- export default function Store(props){
+  const [ mynum , setCount] = useState(0);
 
-  const [counter , setCount] = useState(0);
-  
-  function IncreaseCounter(){
-    setCount(prev => prev +1)
+  function upNum(){
+    setCount(prev => prev + 1);
   }
   
-  function DecreaseCounter (){
-    setCount(prev => prev -1)
+  function DownNum (){
+    setCount(prev => prev - 1);
   }
 
-  function MultiplyCounter(){
-    setCount(prev => prev * 2)
+  function MultiNum(){
+    setCount(prev => prev * 2);
   }
 
   const value = {
-    counter,
-    IncreaseCounter,
-    DecreaseCounter,
-    MultiplyCounter
+    mynum , upNum , DownNum , MultiNum
   };
 
   return(

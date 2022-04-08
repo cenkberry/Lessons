@@ -521,6 +521,11 @@ body {
   color: #ffffff;
 }
 
+.btn-orange {
+  background-color: #fd7e14;
+  color: #ffffff;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
