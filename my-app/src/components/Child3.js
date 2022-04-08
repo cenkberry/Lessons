@@ -2,12 +2,11 @@ import { useContext } from "react";
 import { stats } from "../Context";
 
 export default function Child3(){
-  const {isshowIT , setShow} = useContext(stats);
+  const {isavab , setAvab} = useContext(stats);
 
   return(
-    <div className="w-96 h-12 bg-blue-500 border-2 fac fjc">
-        <h1>Child 3</h1>
-        <button className="btn btn-green mx-5" onClick={()=> setShow(!isshowIT)}>change</button>
+   <div className="w-36 h-36 bg-red-500 border-2 fac fjc">
+      {isavab ? <h1>Work</h1> : <h1>NOT</h1> }
    </div>
   )
 }

@@ -18,7 +18,7 @@ export default function App(){
        <Child1 />
        <Child2 />
        <Child3 />
-       <button className="btn btn-green" onClick={()=> setAvab(!isavab)}>change</button>
+       <button className="btn btn-green" onClick={()=> setAvab(!isavab)}>Logout</button>
        </stats.Provider>
       </div>
     )

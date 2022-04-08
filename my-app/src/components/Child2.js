@@ -4,13 +4,11 @@ import { stats } from "../Context";
 
 export default function Child2(){
 
-  const {isshowIT , setShow} = useContext(stats);
-
+  const {isavab , setAvab} = useContext(stats);
 
   return(
-    <div className="w-96 h-12 bg-green-500 border-2 fac fjc">
-    {isshowIT ? <h1>Child 2</h1> : <h1>now working..</h1>}
-    <button className="btn btn-green mx-5" onClick={()=> setShow(!isshowIT)}>change</button>
+   <div className="w-96 h-24 bg-red-500 border-2 fac fjc">
+      {isavab ? <h1>Work</h1> : <h1>NOT</h1> }
    </div>
   )
 }
