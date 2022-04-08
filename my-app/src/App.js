@@ -1,28 +1,43 @@
 import React from 'react';
-import { useEffect , useRef , useState , useReducer} from 'react';
+import { useEffect , useRef , useState , useReducer , createContext} from 'react';
+import Child from './components/Child';
 
-export default function App(){
-   
-   const messages = ["LinkedIn : merhaba bla blaaaaaaaaaaaaaaaaaaa", "Facebook : merhaba bla bla", "Gmail : merhaba bla bla"];
+const themes = {
+  dark:{
+    backgroundColor:"#383838",
+    color:"#fff"
+  },
+  light:{
+    backgroundColor:"#fff",
+    color:"#000"
+  }
+}
 
+export const ThemeContext = createContext(themes.light);
+
+
+const App = ()=> {
+
+   const [mode , setmode ] = useState(themes.light);
+
+   const togglemode = ()=>{
+     if(mode === themes.dark){
+       setmode(themes.light)
+     }
+     else{
+       setmode(themes.dark)
+     }
+   }
 
     return(
-      <div className="h-screen bg-blue-300 fac fjc flex-col">
-         <div className="relative my-2">
-          <img className="w-16"src="http://cdn.onlinewebfonts.com/svg/img_519882.png" alt="" />
-          <div className="badge">{messages.length}</div>
-         </div>
-      
-       <div className="p-2 bg-gray-400">
-       {
-         messages.map( message =>{
-           return(
-             <div className="my-2 p-2 bg-red-500">{message}</div>
-           )
-         })
-       }
-       </div>
+      <div className="h-screen bg-gray-300 fac fjc flex-col">
+        <button onClick={togglemode} className="btn btn-gray mb-3">{mode === themes.dark ? "Dark mode" : "Light mode"}</button>
+
+      <ThemeContext.Provider value={mode}>
+         <Child />
+      </ThemeContext.Provider>
 
       </div>
     )
 }
+export default App;
