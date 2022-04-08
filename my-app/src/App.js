@@ -1,43 +1,25 @@
 import React from 'react';
-import { useEffect , useRef , useState , useReducer , createContext} from 'react';
-import Child from './components/Child';
+import { useEffect , useRef , useState , useReducer} from 'react';
+import Child1 from './components/Child1';
+import Child2 from './components/Child2';
+import Child3 from './components/Child3';
 
-const themes = {
-  dark:{
-    backgroundColor:"#383838",
-    color:"#fff"
-  },
-  light:{
-    backgroundColor:"#fff",
-    color:"#000"
-  }
-}
-
-export const ThemeContext = createContext(themes.light);
+import {stats} from './Context';
 
 
-const App = ()=> {
-
-   const [mode , setmode ] = useState(themes.light);
-
-   const togglemode = ()=>{
-     if(mode === themes.dark){
-       setmode(themes.light)
-     }
-     else{
-       setmode(themes.dark)
-     }
-   }
+export default function App(){
+    
+   const [isshowIT , setShow] = useState(false);
+   const [isavab , setAvab] = useState(false);
 
     return(
       <div className="h-screen bg-gray-300 fac fjc flex-col">
-        <button onClick={togglemode} className="btn btn-gray mb-3">{mode === themes.dark ? "Dark mode" : "Light mode"}</button>
-
-      <ThemeContext.Provider value={mode}>
-         <Child />
-      </ThemeContext.Provider>
-
+      <stats.Provider value={{isshowIT , setShow , isavab , setAvab}}>
+       <Child1 />
+       <Child2 />
+       <Child3 />
+       <button className="btn btn-green" onClick={()=> setAvab(!isavab)}>change</button>
+       </stats.Provider>
       </div>
     )
 }
-export default App;
