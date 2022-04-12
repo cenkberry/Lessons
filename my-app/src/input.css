@@ -115,17 +115,3 @@
 
 @tailwind utilities;
 
-@keyframes mover {
-
-  0%{
-    position: absolute;
-    top: 200px;
-    right: 200px;
-  }
-  100%{
-    position: absolute;
-    top: 600px;
-    right: 100px;
-  }
-  
-}
