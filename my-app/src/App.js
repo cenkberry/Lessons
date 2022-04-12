@@ -1,14 +1,10 @@
-import React from 'react';
+import React,{useState} from 'react';
 
-export default function App(){
+export default function App() {
 
-  
-  
-   
-    return(
-        <div className="h-screen bg-indigo-400 fac fjc flex-col"> 
-          
-        
-        </div>
-    )
+  return (
+    <div className="relative h-screen fac fjc flex-col bg-gray-300 page">
+       <div>test</div>
+    </div>
+  )
 }
