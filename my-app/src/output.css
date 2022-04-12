@@ -507,6 +507,11 @@ body {
   border-radius: 0.25rem;
 }
 
+.btn-green {
+  background-color: #00af3b;
+  color: #ffffff;
+}
+
 .btn-indigo {
   background-color: #6610f2;
   color: #ffffff;
@@ -525,8 +530,28 @@ body {
   height: 100vh;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
 .w-24 {
   width: 6rem;
+}
+
+.w-44 {
+  width: 11rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .flex-col {
@@ -543,8 +568,18 @@ body {
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
 .p-2 {
   padding: 0.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 @-webkit-keyframes mover {
