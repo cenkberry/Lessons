@@ -466,29 +466,86 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-*{
-  -webkit-user-select : none;
-      -ms-user-select : none;
-          user-select : none;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+ol,
+  ul {
+  list-style: none;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size:16px;
 }
 
 .fac {
   display: flex;
-  align-items: center !important;
+  align-items: center;
 }
 
 .fjc {
   display: flex;
-  justify-content: center !important;
+  justify-content: center;
 }
 
-.relative {
-  position: relative;
+.btn {
+  display: inline;
+  margin: 0.1rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 500;
+  -webkit-appearance: button;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+
+.btn-blue {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.btn-red {
+  background-color: #ed0034;
+  color: #ffffff;
+}
+
+.btn-green {
+  background-color: #00af3b;
+  color: #ffffff;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .h-screen {
@@ -502,5 +559,19 @@ body {
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.filter {
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 

@@ -2,43 +2,62 @@
 @tailwind components;
 
 @layer components {
-  *{
-    user-select : none;
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
   }
 
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size:16px;
   }
 
   .fas {
     display: flex;
-    align-items: start !important;
+    align-items: flex-start;
   }
 
   .fac {
     display: flex;
-    align-items: center !important;
+    align-items: center;
   }
 
   .fae {
     display: flex;
-    align-items: end !important;
+    align-items: flex-end;
   }
 
   .fjs {
     display: flex;
-    justify-content: start !important;
+    justify-content: flex-start;
   }
 
   .fjc {
     display: flex;
-    justify-content: center !important;
+    justify-content: center;
   }
 
   .fje {
     display: flex;
-    justify-content: end !important;
+    justify-content: flex-end;
   }
 
   .gr1 {
