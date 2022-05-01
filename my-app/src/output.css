@@ -498,6 +498,16 @@ body {
   font-size:16px;
 }
 
+.fac {
+  display: flex;
+  align-items: center;
+}
+
+.fjc {
+  display: flex;
+  justify-content: center;
+}
+
 .btn {
   display: inline;
   margin: 0.1rem;
@@ -516,6 +526,11 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
+}
+
+.btn-blue {
+  background-color: #007bff;
+  color: #ffffff;
 }
 
 .btn-red {
