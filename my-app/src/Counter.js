@@ -1,12 +1,11 @@
 import React from 'react';
 import {useDispatch} from "react-redux";
-import {arttir , azalt, sifirla } from "./store/actions";
 import {useSelector} from "react-redux";
+import {arttir , azalt, sifirla , namer} from "./store/actions";
 
 function Counter(){
   const dispatch = useDispatch();
   const {counter} = useSelector(state => state );
-
 
   return(
     <div className="text-6xl mb-3 fac fjc flex-col">
@@ -19,6 +18,9 @@ function Counter(){
 
       <button onClick={()=> dispatch(azalt())}
       className='btn btn-red w-24'>-</button>
+
+      <button onClick={()=> dispatch(namer())}
+      className='btn btn-indigo w-24'>Name</button>
 
     </div>
   )
