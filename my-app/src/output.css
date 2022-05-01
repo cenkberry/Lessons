@@ -498,16 +498,6 @@ body {
   font-size:16px;
 }
 
-.fac {
-  display: flex;
-  align-items: center;
-}
-
-.fjc {
-  display: flex;
-  justify-content: center;
-}
-
 .btn {
   display: inline;
   margin: 0.1rem;
@@ -528,11 +518,6 @@ body {
   border-radius: 0.25rem;
 }
 
-.btn-blue {
-  background-color: #007bff;
-  color: #ffffff;
-}
-
 .btn-red {
   background-color: #ed0034;
   color: #ffffff;
@@ -543,17 +528,32 @@ body {
   color: #ffffff;
 }
 
-.my-3 {
-  margin-top: 0.75rem;
+.mb-3 {
   margin-bottom: 0.75rem;
+}
+
+.flex {
+  display: flex;
 }
 
 .h-screen {
   height: 100vh;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .bg-gray-300 {
@@ -561,17 +561,7 @@ body {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
-
-.p-3 {
-  padding: 0.75rem;
-}
-
-.filter {
-  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
