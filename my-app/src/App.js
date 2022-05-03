@@ -1,18 +1,18 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import Counter from './Counter';
-import store from './store';
 
 function App() {
 
 
+
   return(
-    <Provider store={store}>
-    <div className="h-screen flex items-center justify-center flex-col bg-gray-300">
-       <Counter />
-    </div>
-    </Provider>
-  );
+     <div className='h-screen fac fjc flex-col bg-gray-200'>
+
+       <div>aaa</div>
+       <div>sss</div>
+       <div>333</div>
+
+     </div>
+  )
 }
 
 
