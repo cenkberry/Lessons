@@ -18,6 +18,7 @@ export default function Box2() {
             <button className="btn btn-indigo" onClick={multiNum}>Multiply!</button>
             <button className="btn btn-yellow" onClick={divNum}>Divide!</button>
             </div>
+            { mynum < 100 && <div>Number is lower than 100.</div> }
         </div>
 
 

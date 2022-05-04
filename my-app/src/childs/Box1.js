@@ -18,6 +18,7 @@ export default function Box1() {
           <div>Last number is: {mynum}</div>
         </div>
       }
+     
     </div>
   )
 };
