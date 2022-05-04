@@ -1,9 +1,14 @@
-
+import React from 'react';
 
 export default function App() {
+
+
+
   return (
-    <div class="h-screen fac fjc flex-col bg-gray-300">
-      Selam react18
+    <div className="h-screen fac fjc flex-col bg-gray-300">
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>Reiciendis saepe repellat iste modi!</div>
+        <div>Odio doloribus perferendis ea vitae!</div>
     </div>
   );
 }
