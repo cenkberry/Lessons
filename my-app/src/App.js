@@ -1,21 +1,12 @@
-import Box1 from "./childs/Box1";
-import Box2 from "./childs/Box2";
-import Box3 from "./childs/Box3";
+import React from 'react';
 
 function App() {
-
-
-
   return(
-     <div className='h-screen grid grid-cols-3 bg-gray-200'>
-
-      <Box1 />
-      <Box2 />
-      <Box3 />
-
+     <div className='h-screen grid grid-cols-2 -gray-200'>
+      <div>Lorem, ipsum.</div>
+      <div>Nihil, sequi.</div>
+      <div>Tempore, enim!</div>
      </div>
   )
 }
-
-
 export default App;
